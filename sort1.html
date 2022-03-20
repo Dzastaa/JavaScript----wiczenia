@@ -1,0 +1,24 @@
+<html>
+	<head>
+	<title>
+	Sortowanie
+	</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="Content-Langugage" content="pl">
+	<script type="text/javascript";>
+	var liczby = new Array();
+	for (var i=0; i<10; i++)
+		liczby[i]=Math.round(1000*Math.random()%100);
+	document.write("<br>-------Przed sortowaniem---------<br>")	
+	for (var i=0; i<10; i++)
+		document.write(liczby[i]+"<br>");	
+		
+	liczby.sort();	
+	document.write("<br>-------Po posortowaniu---------<br>")		
+	for (var i=0; i<10; i++)
+		document.write(liczby[i]+"<br>");	
+	</script>
+	</head>
+	<body>
+	</body>
+</html>

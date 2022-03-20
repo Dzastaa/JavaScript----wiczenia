@@ -1,0 +1,48 @@
+<!--Zdefiniuj funkcję, która będzie wyświetlała datę i czas po polsku, np. w postaci:
+Dzisiaj jest: poniedziałek, 23 października 2018 roku, godzina: 13:21:23 //-->
+<html>
+	<head>
+	
+		<title>Ćwiczenie</title>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="Content-Langugage" content="pl">
+		
+		<script type="text/javascript">
+		var data = new Date();
+		function info(data)
+		{
+			var dzien=data.getDate();
+			var miesiac=data.getMonth()+1;
+			var rok=data.getFullYear();
+			document.write("Dzisiaj jest: "+dzien+" "+slownie(miesiac)+" "+rok+" roku, godzina: "+data.toLocaleTimeString());
+		}
+		function slownie(miesiac)
+		{
+			switch(miesiac)
+				{
+					case 1: return "styczen";
+					case 2: return "luty";
+					case 3: return "marzec";
+					case 4: return "kwiecien";
+					case 5: return "maj";
+					case 6: return "czerwiec";
+					case 7: return "lipiec";
+					case 8: return "sierpien";
+					case 9: return "wrzesien";
+					case 10: return "pazdziernik";
+					case 11: return "listopad";
+					case 12: return "grudzien";
+				}
+		}
+
+
+	</script>
+	</head>
+<body>
+<script type="text/javascript">
+var data= new Date();
+info(data);
+</script>
+</body>
+</html>

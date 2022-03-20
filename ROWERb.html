@@ -1,0 +1,36 @@
+
+<html>
+	<head>
+	<title>
+	JS
+	</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="Content-Langugage" content="pl">
+        <style type="text/css">
+            #img{
+                position: absolute;
+                }
+        </style>
+        
+	<script type="text/javascript">
+        function Animacja(){
+            var blok = document.getElementById('img');
+                if (parseInt(blok.style.left)<10)
+                    {
+                        blok.style.left="1100px";
+                    }
+                    else
+                    {
+                       blok.style.left = (parseInt(blok.style.left) - 1)+"px"; 
+
+                    }
+        }
+        
+        window.setInterval("Animacja()", 1);
+    </script>
+	</head>
+	<body>
+
+        <img id="img" style="left: 400px ; top: 200px" src="9.jpg">
+    </body>
+</html>

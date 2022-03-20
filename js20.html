@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ćwiczenie</title>
+  </head>
+  <body>
+  <h2 id='header'>1a.jpg</h2>
+<script type="text/javascript">
+function zmien_obraz(plik)
+{
+	document.getElementById('obraz').src = plik;
+	document.getElementById('header').innerHTML = plik;
+}
+</script>
+<img src='1a.jpg' id='obraz' onmouseover="zmien_obraz('1b.jpg')" 
+onmouseleave="zmien_obraz('1a.jpg')">
+
+
+
+</body>
+</html>

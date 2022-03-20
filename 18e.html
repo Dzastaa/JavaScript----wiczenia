@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700" rel="stylesheet">
+    <title>Change background color</title>
+  </head>
+
+<script type="text/javascript">
+function zmien_kolor(kolor)
+{
+	document.getElementById('blok').bgColor = kolor;
+	document.getElementById('header').innerHTML = kolor;	
+}
+</script>
+<body id='blok'>
+<h2 id='header'>Zmiana koloru strony</h2>
+<input type="button" onmouseover="zmien_kolor('red')" value='Czerwony'>
+<input type="button" onmouseover="zmien_kolor('green')" value='Zielony'>
+<input type="button" onmouseover="zmien_kolor('blue')" value='Niebieski'>
+<input type="button" onmouseover="zmien_kolor('yellow')" value='Żółty'>
+<input type="button" onmouseover="zmien_kolor('white')" value='Biały'>
+
+</body>
+</html>

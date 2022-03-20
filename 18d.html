@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700" rel="stylesheet">
+    <title>Change background color</title>
+    <style type="text/css">
+      
+      button:hover {
+        background-color: #505050;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="red-color-button">RED</button>
+    <button id="blue-color-button">BLUE</button>
+    <button id="white-color-button">WHITE</button>
+	<button id="green-color-button">GREEN</button>
+    <button id="dark-color-button">DARK</button>
+	<button id="yellow-color-button">YELLOW</button>
+  </body>
+</html>
+<script type="text/javascript">
+  function changeColor(c = 'white') {
+    if (c !== undefined) {
+      document.body.style.backgroundColor = c;
+    }
+  }
+
+  var red = document.getElementById('red-color-button');
+  var blue = document.getElementById('blue-color-button');
+  var green = document.getElementById('green-color-button');
+  var white = document.getElementById('white-color-button');
+  var dark = document.getElementById('dark-color-button');
+  var yellow = document.getElementById('yellow-color-button');
+
+  red.onclick = function() {
+    changeColor('red');
+  }
+
+  blue.onclick = function() {
+    changeColor('blue');
+  }
+   green.onclick = function() {
+    changeColor('green');
+  }
+
+  white.onclick = function() {
+    changeColor('white');
+  }
+
+  dark.onclick = function() {
+    changeColor('#242424');
+  }
+  yellow.onclick = function() {
+    changeColor('yellow');
+  }
+
+</script>

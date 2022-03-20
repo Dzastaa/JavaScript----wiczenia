@@ -1,0 +1,45 @@
+<html>
+	<head>
+	<title>
+	Ćwiczenie 10b
+	</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="Content-Langugage" content="pl">
+	<script type="text/javascript";>
+	alert("Rozwiązywanie równania kwadratowego");
+var a = parseInt(prompt("Podaj a"));
+var b = parseInt(prompt("Podaj b"));
+var c = parseInt(prompt("Podaj c"));
+if (a != 0)
+{
+	var delta=b*b-4*a*c;
+	if (delta > 0)
+	{
+		var x1 = (-b - Math.sqrt(delta))/(2*a);
+		var x2 = (-b + Math.sqrt(delta))/(2*a);
+		document.write("x1="+x1+"<br>");
+		document.write("x2="+x2+"<br>");
+	}
+	else
+	{
+		if (delta == 0)
+		{
+			var x = -b / (2*a);
+			document.write("x="+x+"<br>");
+		}
+		else
+		{
+			document.write("Brak rozwiązań<br>");
+		}
+	}	
+}	
+else
+{
+	document.write("To nie jest równanie kwadratowe<br>");
+}
+
+	</script>
+	</head>
+	<body>
+	</body>
+</html>

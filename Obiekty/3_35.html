@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang="pl-PL">
+<head>
+	<meta charset="UTF-8">
+	<title>3_31</title>
+<script type="text/javascript">
+var obiekt_1= {
+nazwisko: 'Nowacki',
+imie: 'Jan',			//trzy wlasciwosci
+zawod: 'informatyk',
+pokaz: function()		//metoda
+{
+	document.write(this.nazwisko+ ' ' +this.imie)		//this odwoluje sie do konkretnych wartosci
+}
+}
+obiekt_1.wiek=19;
+obiekt_1.wypisz_wiek=function() {alert('Wiek: '+this.wiek+' lat')}
+obiekt_1.wypisz();
+</script>
+</head>
+<body>
+</body>
+</html>

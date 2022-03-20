@@ -1,0 +1,1 @@
+document.write("Skrypt zewnętrzny zawarty w pliku 1c.js<br>");

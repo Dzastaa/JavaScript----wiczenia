@@ -1,0 +1,30 @@
+<html>
+	<head>
+	<title>
+	Ćwiczenie 9c
+	</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="Content-Langugage" content="pl">
+	<script type="text/javascript";>
+		alert("Kalkulator bitowy");
+			var x = parseInt(prompt("Podaj pierwszą liczbę:"));
+			var y = parseInt(prompt("Podaj drugą liczbę"));
+			var n = parseInt(prompt("Podaj o ile bitów chcesz przesunąć liczbę"));
+			var suma_bitowa = x | y;
+			var iloczyn_bitowy = x & y;
+			var negacja_bitowa_x = ~x;
+			var negacja_bitowa_y = ~y;
+			var roznica_symetryczna = x ^ y;
+			var przesuniecie_bitowe_w_prawo = x >> n;
+			var przesuniecie_bitowe_w_lewo = y << n;
+			document.write(x+" | "+y+" = "+suma_bitowa+"<br>");
+			document.write(x+" & "+y+" = "+iloczyn_bitowy+"<br>");
+			document.write("~"+x+" = "+negacja_bitowa_x+"<br>");
+			document.write("~"+y+" = "+negacja_bitowa_y+"<br>");
+			document.write(x+" >> "+n+" = "+przesuniecie_bitowe_w_prawo+"<br>");
+			document.write(y+" << "+n+" = "+przesuniecie_bitowe_w_lewo+"<br>");
+	</script>
+	</head>
+	<body>
+	</body>
+</html>

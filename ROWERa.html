@@ -1,0 +1,30 @@
+<html>
+	<head>
+	<title>
+	Strona ze skryptami JS
+	</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="Content-Language" content="pl">
+	<style type="text/css">
+		img {
+			position:		absolute;
+		}
+	</style>
+	
+	<script type="text/javascript">
+	<!--
+	function przesun(skok)
+	{
+		var blok = document.getElementById('obraz');
+		blok.style.left = (parseInt(blok.style.left)+skok+"px");
+	}
+	//-->
+	</script>
+	</head>
+	<body>
+		<img id = "obraz" src="9.jpg" style="left: 400px; top:100px;">
+		<input type = "button" value="W lewo" onclick="przesun(-10);">
+		<input type = "button" value="W prawo" onclick="przesun(10);">
+		
+	</body>
+</html>

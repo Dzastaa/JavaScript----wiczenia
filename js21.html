@@ -1,0 +1,38 @@
+<html>
+	<head>
+	<title>
+	JS
+	</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="Content-Langugage" content="pl">
+        <style type="text/css">
+            #napis{
+                position: absolute;
+                background-color: aqua;
+                width: 210px;
+                float: left;
+            }
+        </style>
+        
+	<script type="text/javascript">
+        function Animacja(){
+            var blok = document.getElementById('napis');
+                if (parseInt(blok.style.left)<50)
+                    {
+                        blok.style.left="500px";
+                    }
+                    else
+                    {
+                       blok.style.left = (parseInt(blok.style.left) - 1)+"px"; 
+
+                    }
+        }
+        
+        window.setInterval("Animacja()", 10);
+    </script>
+	</head>
+	<body>
+
+        <div id="napis" style="left: 300px">JavaScript - język skryptowy</div>
+    </body>
+</html>

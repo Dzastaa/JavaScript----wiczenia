@@ -1,0 +1,34 @@
+<html>
+	<head>
+	<title>
+	Zadanie 18
+	</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="Content-Langugage" content="pl">
+	<script type="text/javascript">
+function szlaczek (ile, znak)
+{
+	for (var i=1; i<=ile; i++)
+		document.write(znak);
+}
+function wizytowka (imie, znak)
+{
+	document.write("<center><pre>");
+	var dl = imie.length+4;
+	szlaczek(dl,znak);
+	document.write("<br>");
+	document.write(znak);
+	document.write(" ");
+	document.write(imie);
+	document.write(" ");
+	document.write(znak);
+	document.write("<br>");
+	szlaczek (dl, znak);
+	document.write("<br></pre></center>");
+}
+var napis=prompt("Podaj imie: ");
+wizytowka (napis, '$');
+	</script>	
+	</center>
+	</body>
+</html>

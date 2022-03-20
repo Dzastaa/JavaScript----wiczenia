@@ -1,0 +1,27 @@
+<html>
+	<head>
+	<title>
+	stronka
+	</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="Content-Langugage" content="pl">
+	<script type="text/javascript";>
+	var myWindow;
+	function OpenWin(url)
+	{ 
+		myWindow = window.open(url, "myWindow", "left=100, top=200, width=800, height=600");
+	}
+	function CloseWin()
+	{ 
+		myWindow.close();
+	}
+	</script>
+	</head>
+	<body>
+
+	<button value="Otwórz stronę" name="otworz" onclick='OpenWin("https://google.com");'>Otwórz stronę Google</button>
+	<br>
+	<button value="zamknij stronę" name="zamknij" onclick='CloseWin();'>Zamknij stronę Google</button>
+	
+	</body>
+</html>

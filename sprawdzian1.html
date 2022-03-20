@@ -1,0 +1,60 @@
+<!--Napisz skrypt : ktory wczyta liczbę z klawiatury i wykona następujące czynności
+1. Jeśli to liczba dodattnia, to wyświetli na ekranie wszystkie liczby naturalne od 1 do danej liczby i obliczy ich sumę
+2. W przypadku gdy liczba jest mniejsza od zera obliczy i wyświetli wartość bezwzględna z tej liczby
+3. W przypadku gdy wpisano liczbę zero wyświetli alert z zawortoścą "ZERO!!!"
+
+np. podano liczbę 3:
+1 + 2 + 3 = 6
+
+np. podano liczbę -7
+|-7| = 7
+
+np. podano 0
+
+ZERO w oknie (alert)
+ 		//-->
+<html>
+	<head>
+	<title>
+	Sprawdzian 1
+	</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="Content-Langugage" content="pl">
+	<script type="text/javascript">
+	<!--
+	var x=parseInt(prompt("Podaj pierwsza liczbe: "));
+	if(x>0)
+	{
+		for(i=1;i<=x;i++)
+		{
+			document.write(" "+i+" ");
+			
+		}
+		document.write("<br>");
+		for(i=1;i<=x;i++)
+		{
+			
+			document.write(i+"+");
+			
+		}
+		
+		var suma=i+i++;
+		document.write("="+suma+++" ");
+		
+	
+	}
+	if(x<0)
+	{
+		
+		document.write("|"+x+"|="+-x+" ");
+	}
+	if(x==0)
+	{
+		alert("ZERO!!!")
+	}
+	
+	
+	//-->
+	</script>	
+	</body>
+</html>

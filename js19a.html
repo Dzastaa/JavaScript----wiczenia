@@ -1,0 +1,68 @@
+<!--Utwórz narzędzie służace do obliczania pola i obwodu prostokąta. Narzędzie ma być oparte o formularz html i funkcję JS //-->
+<html>
+	<head>
+	
+		<title>Ćwiczenie</title>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="Content-Langugage" content="pl">
+		
+		<script type="text/javascript">
+		
+		
+			function spr_liczbe (form)
+			
+			{
+				var x=parseInt(form.liczba.value);
+				var y=parseInt(form.liczba.value);
+				
+				if (isNaN(x))
+					{
+					alert("Podano wartość nie będącą liczbą");
+					form.liczba1.value="";
+					form.liczba2.value="";
+					return false;
+					}
+				else
+					return true;
+					
+					
+			
+			}
+			
+		
+			</script>
+	</head>
+<body>
+
+
+			
+	<table bgcolor="yellow" border="1" cellspacing="0" bordercolor="white" align="center">
+	
+	<form action="odbierz.php" method="get" onsubmit="return spr_liczbe(this);">
+	<tr height="50">
+		<th colspan="2">&nbsp;&nbsp;Pole i obwód prostokąta&nbsp;&nbsp;</th>
+	</tr>
+	<tr height="70">
+		<th>&nbsp;&nbsp;Krótszy bok:&nbsp;&nbsp;</th>
+		<td>&nbsp;&nbsp;<input type="text" name="liczba1" required>&nbsp;&nbsp;</td>
+	</tr>
+	<tr height="70">
+		<th>&nbsp;&nbsp;Dłuższy bok:&nbsp;&nbsp;</th>
+		<td>&nbsp;&nbsp;<input type="text" name="liczba2" required>&nbsp;&nbsp;</td>
+	</tr>
+	<tr height="70">
+		<th>&nbsp;&nbsp;Pole:&nbsp;&nbsp;</th>
+		<td>&nbsp;&nbsp;<input type="text" name="pole" required>&nbsp;&nbsp;</td>
+	</tr>
+	<tr height="70">
+		<th>&nbsp;&nbsp;Obwód:&nbsp;&nbsp;</th>
+		<td>&nbsp;&nbsp;<input type="text" name="obwod" required>&nbsp;&nbsp;</td>
+	</tr>
+	<tr height="50">
+		<th colspan="2"><input type="submit" value="Oblicz">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Wyczyść"></th>
+	</tr>
+	</form>
+
+</body>
+</html>

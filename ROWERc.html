@@ -1,0 +1,39 @@
+
+<html>
+	<head>
+	<title>
+	Strona ze skryptami JS
+	</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="Content-Language" content="pl">
+	<style type="text/css">
+		img {
+			position:		absolute;
+			height: 200px;
+			width: 300px;
+		}
+	</style>
+	
+	<script type="text/javascript">
+	<!--
+	function przesun(skok)
+	{
+		var blok = document.getElementById('obraz');
+		blok.style.left = (parseInt(blok.style.left)+skok+"px");
+	}
+	function gora(skok)
+	{
+	var blok = document.getElementById('obraz');
+	blok.style.top = (parseInt(blok.style.top)+skok+"px");
+	}
+	//-->
+	</script>
+	</head>
+	<body>
+		<img id = "obraz" src="9.jpg" style="left: 500px; top: 200px;">
+		<input type = "button" value="Lewo" onclick="przesun(-10);">
+		<input type = "button" value="Prawo" onclick="przesun(10);">
+		<input type = "button" value="Góra" onclick="gora(-10);">
+		<input type = "button" value="Dół" onclick="gora(10);">
+	</body>
+</html>
